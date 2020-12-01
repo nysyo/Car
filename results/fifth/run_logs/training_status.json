@@ -1,0 +1,144 @@
+{
+    "Car": {
+        "checkpoints": [
+            {
+                "steps": 499947,
+                "file_path": "results\\fifth\\Car\\Car-499947.onnx",
+                "reward": null,
+                "creation_time": 1606659789.3822715
+            },
+            {
+                "steps": 999989,
+                "file_path": "results\\fifth\\Car\\Car-999989.onnx",
+                "reward": 0.4388999988635381,
+                "creation_time": 1606660480.569924
+            },
+            {
+                "steps": 1499944,
+                "file_path": "results\\fifth\\Car\\Car-1499944.onnx",
+                "reward": null,
+                "creation_time": 1606661165.7510471
+            },
+            {
+                "steps": 1999989,
+                "file_path": "results\\fifth\\Car\\Car-1999989.onnx",
+                "reward": 0.6605695576771445,
+                "creation_time": 1606661858.5560517
+            },
+            {
+                "steps": 2499989,
+                "file_path": "results\\fifth\\Car\\Car-2499989.onnx",
+                "reward": 0.8259111129575305,
+                "creation_time": 1606662554.0289485
+            },
+            {
+                "steps": 2999978,
+                "file_path": "results\\fifth\\Car\\Car-2999978.onnx",
+                "reward": 0.8938694347937902,
+                "creation_time": 1606663258.6962998
+            },
+            {
+                "steps": 3499949,
+                "file_path": "results\\fifth\\Car\\Car-3499949.onnx",
+                "reward": null,
+                "creation_time": 1606663977.3928444
+            },
+            {
+                "steps": 3999991,
+                "file_path": "results\\fifth\\Car\\Car-3999991.onnx",
+                "reward": 0.9633861173082281,
+                "creation_time": 1606664696.5700376
+            },
+            {
+                "steps": 4499998,
+                "file_path": "results\\fifth\\Car\\Car-4499998.onnx",
+                "reward": 0.9666444504702533,
+                "creation_time": 1606665432.016216
+            },
+            {
+                "steps": 4999986,
+                "file_path": "results\\fifth\\Car\\Car-4999986.onnx",
+                "reward": 0.8078349962830543,
+                "creation_time": 1606666177.3410237
+            },
+            {
+                "steps": 5499980,
+                "file_path": "results\\fifth\\Car\\Car-5499980.onnx",
+                "reward": 0.898827585338176,
+                "creation_time": 1606666917.373153
+            },
+            {
+                "steps": 5999991,
+                "file_path": "results\\fifth\\Car\\Car-5999991.onnx",
+                "reward": 0.9565750360488892,
+                "creation_time": 1606667640.4688017
+            },
+            {
+                "steps": 6499995,
+                "file_path": "results\\fifth\\Car\\Car-6499995.onnx",
+                "reward": 0.9689342159973947,
+                "creation_time": 1606668374.7406304
+            },
+            {
+                "steps": 6999995,
+                "file_path": "results\\fifth\\Car\\Car-6999995.onnx",
+                "reward": 0.9761244718064653,
+                "creation_time": 1606669129.5541794
+            },
+            {
+                "steps": 7499984,
+                "file_path": "results\\fifth\\Car\\Car-7499984.onnx",
+                "reward": 0.9598414929623299,
+                "creation_time": 1606669873.9445722
+            },
+            {
+                "steps": 7999987,
+                "file_path": "results\\fifth\\Car\\Car-7999987.onnx",
+                "reward": 0.9745115385605738,
+                "creation_time": 1606670611.918592
+            },
+            {
+                "steps": 8499998,
+                "file_path": "results\\fifth\\Car\\Car-8499998.onnx",
+                "reward": 0.9775220567689222,
+                "creation_time": 1606671342.7490575
+            },
+            {
+                "steps": 8999989,
+                "file_path": "results\\fifth\\Car\\Car-8999989.onnx",
+                "reward": 0.9721764729303473,
+                "creation_time": 1606672078.5948186
+            },
+            {
+                "steps": 9499985,
+                "file_path": "results\\fifth\\Car\\Car-9499985.onnx",
+                "reward": 0.9486534523552862,
+                "creation_time": 1606672794.8208919
+            },
+            {
+                "steps": 9999977,
+                "file_path": "results\\fifth\\Car\\Car-9999977.onnx",
+                "reward": 0.9747700214385986,
+                "creation_time": 1606673510.221181
+            },
+            {
+                "steps": 10000204,
+                "file_path": "results\\fifth\\Car\\Car-10000204.onnx",
+                "reward": 0.9707575082778931,
+                "creation_time": 1606673510.2906928
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000204,
+            "file_path": "results\\fifth\\Car.onnx",
+            "reward": 0.9707575082778931,
+            "creation_time": 1606673510.2906928
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.23.0.dev0",
+        "torch_version": "1.7.0+cu101",
+        "tensorflow_version": "2.3.1"
+    }
+}
