@@ -12,8 +12,7 @@ public class CarAgents : Agent
     public Transform target;
     [SerializeField] private float speed = 12f;
     [SerializeField] private float width = 0.5f;
-    [SerializeField] private Vector3[] targetPos;
-    [SerializeField] private Vector3[] agentPos;
+    [SerializeField] private Transform[] spawnPoints;
     private Rigidbody _rb;
     public override void Initialize()
     {
@@ -22,7 +21,7 @@ public class CarAgents : Agent
 
     public override void OnEpisodeBegin()
     {
-        target.localPosition = targetPos[Random.Range(0,targetPos.Length)];
+        target.localPosition = spawnPoints[Random.Range(0,spawnPoints.Length)].localPosition;
     }
     
     public override void OnActionReceived(float[] vectorAction)
@@ -38,7 +37,7 @@ public class CarAgents : Agent
             AddReward(1.0f);
             EndEpisode();
         }
-        AddReward(-0.0005f);
+        AddReward(-0.001f);
         if (transform.position.y < -1f)
         {
             ResetAgent();
@@ -55,7 +54,7 @@ public class CarAgents : Agent
 
     private void ResetAgent()
     {
-        this.transform.localPosition = agentPos[Random.Range(0, agentPos.Length)];
+        this.transform.localPosition = spawnPoints[Random.Range(0, spawnPoints.Length)].localPosition;
         transform.rotation = Quaternion.identity;
         _rb.velocity = Vector3.zero;
         _rb.angularVelocity = Vector3.zero;
