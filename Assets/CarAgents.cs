@@ -12,7 +12,7 @@ public class CarAgents : Agent
     public Transform target;
     [SerializeField] private float speed = 12f;
     [SerializeField] private float width = 0.5f;
-    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private Transform[] Obstacles;
     private Rigidbody _rb;
     public override void Initialize()
     {
@@ -21,7 +21,30 @@ public class CarAgents : Agent
 
     public override void OnEpisodeBegin()
     {
-        target.localPosition = spawnPoints[Random.Range(0,spawnPoints.Length)].localPosition;
+        int n = 81;
+        int count = 30;
+        List<int> rand = new List<int>();
+        for (int i = 0; i < count;)
+        {
+            int index = Random.Range(0, n);
+            if (rand.Contains(index))
+            {
+                continue;
+            }
+            else
+            {
+                rand.Add(index);
+                Debug.Log(index);
+                i++;
+            }
+        }
+
+        for (int i = 0; i < 6; i++)
+        {
+            Obstacles[i].localPosition = new Vector3(2*(rand[i]/9)-8,0,2*(rand[i]%9)-8);
+        }
+        target.transform.localPosition = new Vector3(2*(rand[6]/9)-8,0,2*(rand[6]%9)-8);
+        this.transform.localPosition = new Vector3(2*(rand[7]/9)-8,0,2*(rand[7]%9)-8);
     }
     
     public override void OnActionReceived(float[] vectorAction)
@@ -54,7 +77,6 @@ public class CarAgents : Agent
 
     private void ResetAgent()
     {
-        this.transform.localPosition = spawnPoints[Random.Range(0, spawnPoints.Length)].localPosition;
         transform.rotation = Quaternion.identity;
         _rb.velocity = Vector3.zero;
         _rb.angularVelocity = Vector3.zero;

@@ -7,6 +7,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="CarAgents.cs" t="Include" />
+        <e p="depth.shader" t="Include" />
+        <e p="DepthTexture.cs" t="Include" />
+        <e p="RandomNumber.cs" t="Include" />
       </e>
       <e p="Car.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
